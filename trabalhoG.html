@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Regex</title>
+    <style type="text/css">
+        div{
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            max-width: 500px;
+            background-color: rgba(0, 4, 255, 0.507);
+            border:none;
+            color: aliceblue;
+            margin-top: 400px;
+        }
+
+        button{
+            border-radius: none;
+        }
+
+        input{
+            border-radius:  none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form id="formulario">
+        <label for="nome">Insira o seu nome:</label>
+        <input type="text" id="nome" maxlength="100">
+        <br>
+        <br>
+        <label for="email">Insira seu email:</label>
+        <input type="email" id="email">
+        <br>
+        <br>
+        <label for="telefone">Insira seu telefone:</label>
+        <input type="tel" id="telefone" required pattern="\([1-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
